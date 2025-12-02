@@ -13,7 +13,9 @@
   </head>
   <body>
     <div class="grid-con">
-      <div class="col-span-full">
+     <div  class="static-image col-span-full" >
+        <img src="images/poster.webp" alt="Earbuds Poster">
+      </div>
         <model-viewer id="model" src="model/earbuds.gltf" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
 
           <button class="Hotspot" slot="hotspot-1" data-position="22.114881038306805m 76.41863141465969m 92.72411936367459m" data-normal="0m 3.422854333301474e-8m 0.9999999999999996m" data-visibility-attribute="visible">
@@ -37,12 +39,24 @@
           </button>
         </model-viewer>
       </div>
+     <!-- Materials Section -->
       <div class="col-span-full">
         <h2>Materials</h2>
-        <ul id="material-list">
-          <!-- Template will be copied here -->
-        </ul>
+        <svg id="loader" class="hidden" width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <circle cx="50" cy="50" r="32" stroke="hsl(200, 100%, 50%)" stroke-width="8" stroke-linecap="round">
+    <animate attributeName="stroke-dasharray"
+      values="10 200; 100 200; 10 200"
+      dur="1.2s"
+      repeatCount="indefinite" />
+    <animateTransform attributeName="transform"
+      type="rotate"
+      values="0 50 50; 360 50 50"
+      dur="1s"
+      repeatCount="indefinite" />
+  </circle>
+</svg>
 
+        <ul id="material-list"></ul>
         <template id="material-template">
           <li>
             <h3 class="material-heading"></h3>
