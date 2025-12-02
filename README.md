@@ -1,5 +1,5 @@
-# Tamang_Rabin_AJAX_Application
-In this repo AJAX APplication is used to demonstrate how to fetch api 
+# AJAX-application
+This repo shows how to use ajax and  pull data from api-fetch
 
 # Earbuds Promotional Page 
 
